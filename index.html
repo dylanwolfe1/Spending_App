@@ -1,8 +1,13 @@
 
 <html>
-
+  <script type="text/javascript">
+    async function logMovies() {
+      const response = await fetch("https://tlhiviuwr3.execute-api.us-west-2.amazonaws.com/op");
+      const movies = await response.json();
+      console.log(movies);
+}
+  </script>
   <body>
-    <h1>Sydney Pasquin aka Buttercup</h1>
-    <h1>twet</h1>
+    <button onclick="logMovies">Submit</button>
   </body>
 </html>
