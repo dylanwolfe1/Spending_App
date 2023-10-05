@@ -1,13 +1,14 @@
 
 <html>
   <script type="text/javascript">
-    async function logMovies() {
+    async function logFetch() {
       const response = await fetch("https://tlhiviuwr3.execute-api.us-west-2.amazonaws.com/op");
       const movies = await response.json();
       console.log(movies);
-}
+      console.log("erhe")
+    }
   </script>
   <body>
-    <button onclick="logMovies">Submit</button>
+    <button onclick="logFetch">Submit</button>
   </body>
 </html>
