@@ -1,5 +1,5 @@
 
 #!/bin/bash
 cd /home/ec2-user/server
-curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
-yum -y install nodejs npm
+sudo yum install https://rpm.nodesource.com/pub_16.x/nodistro/repo/nodesource-release-nodistro-1.noarch.rpm -y
+sudo yum install nodejs -y --setopt=nodesource-nodejs.module_hotfixes=1
